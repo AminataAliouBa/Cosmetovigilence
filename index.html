@@ -29,31 +29,31 @@
             margin: 0;
             font-size: 24px;
         }
-        .video {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .contributors {
+        .contributors, .report, .video {
             background: #fff;
-            padding: 20px;
             margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .contributors h2 {
-            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .contributors ul {
             list-style: none;
             padding: 0;
         }
         .contributors li {
-            background: #f4f4f4;
-            margin: 5px 0;
+            background: #77aaff;
+            color: #fff;
+            margin-bottom: 5px;
             padding: 10px;
-            border: #ccc 1px solid;
-            border-radius: 5px;
             text-align: center;
+        }
+        .report iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .video video {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -62,19 +62,24 @@
         <h1>Projet de Cosmétovigilance M2-EID²</h1>
     </header>
     <div class="container">
-        <div class="video">
-            <video width="640" height="360" controls>
+        <section class="video">
+            <h2>Vidéo du Projet</h2>
+            <video controls>
                 <source src="Demo_Cosmeto_B08.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas la lecture de vidéos.
             </video>
-        </div>
-        <div class="contributors">
+        </section>
+        <section class="report">
+            <h2>Rapport du Projet</h2>
+            <iframe src="Rapport_BDD_B08.pdf"></iframe>
+        </section>
+        <section class="contributors">
             <h2>Contributeurs</h2>
             <ul>
                 <li>Yakaré Koité</li>
                 <li>Amadou Oury Diallo</li>
             </ul>
-        </div>
+        </section>
     </div>
 </body>
 </html>
